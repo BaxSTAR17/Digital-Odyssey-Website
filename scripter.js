@@ -62,6 +62,6 @@ function weaponslot(n) {
 //     document.querySelector(".weapon").style.left = `${e.clientX}px`
 // });
 
-document.addEventListener("load", function() {
+document.addEventListener("click", function() {
     bgm.play();
 })
