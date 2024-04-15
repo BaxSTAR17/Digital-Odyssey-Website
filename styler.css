@@ -47,6 +47,15 @@ input {
     z-index: 10;
     opacity: 1;
     visibility: visible;
+    border: 2px solid black;
+    width: 500px;
+    height: 640px;
+    background-color: white;
+    transform-origin: left center;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .a1 {
@@ -442,7 +451,7 @@ h3 {
     background-color: rgb(47, 40, 92);
 }
 
-#a1:checked ~ .wrap .book .page {
+/* #a1:checked ~ .wrap .book .page {
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -476,42 +485,48 @@ h3 {
     display: none;
     visibility: hidden;
     opacity: 0;
-}
+} */
 
 #b:checked ~ .wrap .book .b {
     display: flex;
     visibility: visible;
     opacity: 1;
+    transform: rotateY(0deg)
 }
 
 #a1:checked ~ .wrap .book .a1 {
     display: flex;
     visibility: visible;
     opacity: 1;
+    transform: rotateY(0deg)
 }
 
 #b1:checked ~ .wrap .book .b1 {
     display: flex;
     visibility: visible;
     opacity: 1;
+    transform: rotateY(0deg)
 }
 
 #c:checked ~ .wrap .book .c {
     display: flex;
     visibility: visible;
     opacity: 1;
+    transform: rotateY(0deg)
 }
 
 #c1:checked ~ .wrap .book .c1 {
     display: flex;
     visibility: visible;
     opacity: 1;
+    transform: rotateY(0deg)
 }
 
 #d:checked ~ .wrap .book .d {
     display: flex;
     visibility: visible;
     opacity: 1;
+    transform: rotateY(0deg)
 }
 
 @keyframes spin {
@@ -544,6 +559,18 @@ h3 {
     width: 100%;
     height: 100px;
     z-index: 100;
+}
+
+.page {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transform: rotateY(90deg);
+}
+
+.a {
+    z-index: 0;
+    transform: rotateY(0deg)
 }
 
 
