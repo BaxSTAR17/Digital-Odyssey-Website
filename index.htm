@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Survivalists Woo Woo</title>
+    <link rel="stylesheet" href="./styler.css">
+    <script src="scripter.js" defer></script>
+</head>
+<body>
+    <input type="radio" name="survival" id="abc">
+    <input type="radio" name="survival" id="cba">
+    <input type="radio" name="survivalists" id="a">
+    <input type="radio" name="survivalists" id="a1">
+    <input type="radio" name="survivalists" id="b">
+    <input type="radio" name="survivalists" id="b1">
+    <input type="radio" name="survivalists" id="c">
+    <input type="radio" name="survivalists" id="c1">
+    <input type="radio" name="survivalists" id="d">
+    <main class="wrap">
+        <section class="book">
+            <section class="page a">
+                
+            </section>
+            <section class="page a1">
+                <h3 class="title">INTRODUCTION</h3>
+                <section class="desc">
+                    We, The Survivalists at House Torvalds present to you the Ultimate Survivalists' Digital Book Guide that will aid you in your survival expenditures and adventures. This book can help you get into the basics of what you need in order to survive the vast dangerous realm called the "Earth". Let's get into it, fellow survivor!
+                </section>
+            </section>
+            <section class="page b">
+                <h3 class="title desc">SHELTER</h3>
+                <section class="shelter desc">
+                    First prioriety in survival would be to find shelter! It is important to find shelter in order to help deal with the temperature of the outside, weather conditions and overall luxury living conditions to sleep out every day of survival! 
+                </section>
+                <ul class="shelter specifics">
+                    <li onclick="changeSpecs(1)">Roof</li>
+                    <li onclick="changeSpecs(2)">Power/Lights</li>
+                    <li onclick="changeSpecs(3)">Furniture</li>
+                    <li onclick="changeSpecs(4)">Windows/Door</li>
+                    <li onclick="changeSpecs(5)">Foundation</li>
+                </ul>
+            </section>
+            <section class="page b1">
+                <h3 class="title desc">FOOD</h3>
+                <section class="food desc">
+                    Food will always be important wherever you go as it is a main source of your energy, here are the different types of food you must find in order to survive in the wild.
+                </section>
+                <div class="card" style="--t: 1">
+                    <p>
+                        Vegetables!
+                    </p>
+                    <img src="./images/blueberry.png" width="100px" height="100px">
+                </div>
+                <div class="card" style="--t: 2">
+                    <p>
+                        Fruits!
+                    </p>
+                    <img src="./images/fruits.jpg" width="100px" height="100px">
+                </div>
+                <div class="card" style="--t: 3">
+                    <p>
+                        Stew!
+                    </p>
+                    <img src="./images/stew.jpg" width="100px" height="100px">                   
+                </div>
+                <div class="card" style="--t: 4">
+                    <p>
+                        Snacks!
+                    </p>
+                    <img src="./images/snacks.jpg" width="100px" height="100px">  
+                </div>
+            </section>
+            <section class="page c">
+                <h3 class="title desc">WATER</h3>
+                <div class="water desc">
+                    Hydration! Another very important priorety as the average normal person can only survive without water for only 3 days!, which means you really need to hydrate yourself as much as possible! through this nifty card model, it can help you show the different ways to hydrate yourself!
+                </div>
+                <div class="pipecard">
+                    <div class="spin sa" style="--x: 0; --y: 0;"></div>
+                    <div class="spin sb" style="--x: 1; --y: 0;"></div>
+                    <div class="spin sc" style="--x: 2; --y: 0;"></div>
+                    <div class="spin sd" style="--x: 0; --y: 1;"></div>
+                    <div class="spin se" style="--x: 1; --y: 1;"></div>
+                    <div class="spin sf" style="--x: 2; --y: 1;"></div>
+                    <div class="pipcard">
+                        <img src="./images/oasis.jpg" alt="" width="150px" height="150px">
+                        <img src="./images/waterskin.png" alt="" width="150px" height="150px">
+                        <img src="./images/freshwater.jpg" alt="" width="150px" height="150px">
+                        <img src="./images/bottle.png" alt="" width="150px" height="150px">
+                        <img src="./images/watermelon.jpg" alt="" width="150px" height="150px">
+                        <img src="./images/distillation.jpg" alt="" width="150px" height="150px">
+                    </div>
+                </div>
+            </section>
+            <section class="page c1">
+                <h3 class="title desc">CRAFTING</h3>
+                <section class="crafting desc">
+                    When push comes to shove, you need to use any resources you can find in your surroundings and environment!, Through this, comes crafting! This technique helps you obtain tools, weapons, and necessities that will further help you in survival, This little simulation will help you immerse into the world of crafting, press on the buttons of each slot to navigate through items!
+                </section>
+                <section class="craftingtable">
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(1)">
+                        </button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(2)"></button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(3)"></button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(4)"></button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(5)"></button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(6)"></button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(7)"></button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(8)"></button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                    <div class="slot">
+                        <button class="craftbtn" onclick="showItem(9)"></button>
+                        <img src="./images/plank.png" alt="" width="20px" height="20px" class="item1">
+                        <img src="./images/stick.png" alt="" width="20px" height="20px" class="item2">
+                        <img src="./images/stone.png" alt="" width="20px" height="20px" class="item3">
+                        <img src="./images/log.png" alt="" width="20px" height="20px" class="item4">
+                    </div>
+                </section>
+                <aside class="craftingresult">
+
+                </aside>
+            </section>
+            <section class="page d">
+                <h3 class="title desc">COMBAT</h3>
+                <section class="fighting desc">
+                    We can't forget the one of the most important things to survive and that is FIGHTING FOR YOUR LIFE!, These weapons below will aid you on what it's like to pick up weapons and use them against a ferocious enemy like a bear!, Combat is important to further survive against the many ferocious creatures in Earth.
+                </section>
+                <section class="enemy">
+                    <img src="./images/bear.png" width="450px" height="380px">
+                </section>
+                <section class="weaponrack">
+                    <div class="spot"><img onclick="weaponslot(1)" src="./images/warhammer.png" alt="" width="80px" height="80px"></div>
+                    <div class="spot"><img onclick="weaponslot(2)" src="./images/ironsword.png" alt="" width="80px" height="80px"></div>
+                    <div class="spot" onclick="weaponslot(3)"><img src="./images/axe.png" alt="" width="80px" height="80px"></div>
+                    <div class="spot" onclick="weaponslot(4)"><img src="./images/hammer.png" alt="" width="80px" height="80px"></div>
+                    <div class="spot" onclick="weaponslot(5)"><img src="./images/mace.png" alt="" width="80px" height="80px"></div>
+                </section>
+                <!-- <aside class="weapon">
+
+                </aside> -->
+            </section>
+        </section>
+    </main>
+        <section class="nav">
+            <ul class="nav specifics">
+                <li><label id="a1btn" for="a1">Introduction</label></li>
+                <li><label id="bbtn" for="b">Shelter</label></li>
+                <li><label for="b1" class="b1btn">Food</label></li>
+                <li><label for="c" class="cbtn">Water</label></li>
+                <li><label for="c1" class="cbtn">Crafting</label></li>
+                <li><label for="d" class="dbtn">Combat</label></li>
+            </ul>
+        </section>
+</body>
+</html>
